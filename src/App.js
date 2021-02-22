@@ -1,33 +1,40 @@
-// import logo from './logo.svg';
-import './App.css';
-
-import React, {useState} from 'react';
+import React, { useState, useEffect } from 'react';
 // import Header from './components/Header';
 import Nav from './components/Nav';
-import Project from './components/Project';
+import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import About from './components/About';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
+import './App.css';
+
+
 
 function App() {
 
-  const renderPage = () => {
-    switch (currentPage) {
-      case 'Project':
-        return <Project />;
-      case 'Resume':
-        return <Resume />;
-      case 'Contact':
-        return <Contact />;
-      default:
-        return <About />;
-    }
-  };
+  useEffect(() => {
+    document.title = currentPage;
+  })
 
-  const navBar = ['About', 'Project', 'Resume', 'Contact'];
+  const navBar = ['About', 'Portfolio', 'Resume', 'Contact'];
   const [currentPage, setCurrentPage] = useState(navBar[0]);
 
+  const renderPage = () => {
+    switch (currentPage) {
+      case 'Portfolio':
+        return <Portfolio />
+        break;
+      case 'Resume':
+        return <Resume />
+        break;
+      case 'Contact':
+        return <Contact />
+        break;
+      default:
+        return <About />
+        break;
+    }
+  }
 
   return (
     <div>
@@ -38,7 +45,7 @@ function App() {
       >
       </Nav>
       <main>
-       {renderPage()}
+        {renderPage()}
       </main>
       <Footer></Footer>
     </div>

@@ -1,0 +1,15 @@
+[{
+    "name": "Adventure Series", 
+    "desc": "Node/MySQL",
+    "image": "adventureSeries.jpg",
+    "deploy": "https://damp-anchorage-73357.herokuapp.com/",
+    "repo": "https://github.com/yooperjb/Redwood-Adventure-Cycling"
+  },
+  {
+    "name": "Living Room",
+    "desc": "JavaScript/HTML",
+    "image": "fireplace.jpg",
+    "deploy": "https://yooperjb.github.io/Living-Room/",
+    "repo": "https://github.com/yooperjb/Living-Room"
+  }
+  ]
