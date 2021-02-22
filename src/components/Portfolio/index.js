@@ -5,7 +5,6 @@ import projectList from "../../projectList.json";
 const Portfolio = () => {
         
     return (
-        // Single project component goes here
         <section>
             <h1>Portfolio</h1>
             <div id="projectCards">

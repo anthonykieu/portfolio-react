@@ -11,5 +11,12 @@
     "image": "fireplace.jpg",
     "deploy": "https://yooperjb.github.io/Living-Room/",
     "repo": "https://github.com/yooperjb/Living-Room"
+  },
+  {
+    "name": "Run Buddy",
+    "desc": "Css/HTML",
+    "image": "hero-bg.jpg",
+    "deploy": "https://github.com/anthonykieu/run-buddy",
+    "repo": "https://github.com/anthonykieu/run-buddy"
   }
   ]

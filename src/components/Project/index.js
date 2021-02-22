@@ -1,5 +1,4 @@
 import React from 'react';
-import github from "../../assets/images/github_black.png";
 
 const Project = ({project}) => {
     
@@ -9,15 +8,16 @@ const Project = ({project}) => {
             
             <div className="projectText">
             
-                <div className="projectLinks">
+                <div >
                 
-                <a href={project.deploy} target="_blank"><h3>{project.name}</h3></a>
-                <a href={project.repo} target="_blank"><img className="projectLogo" alt="Github Logo" src={github}></img></a>
+                <a href={project.deploy} target="_blank"><h3>Deployed Link</h3></a>
+                
                 
                 </div>
                 
                 <p>{project.desc}</p>
-                
+
+                <a href={project.repo} target="_blank">Github Link</a>
             </div>
             <img className="projectBackground" alt={project.name} src={require(`../../assets/images/${project.image}`).default} />
            
