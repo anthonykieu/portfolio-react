@@ -1,6 +1,17 @@
-# Getting Started with Create React App
+# Portfolio - React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React](./src/assets/images/logo192.png)
+
+## Description
+The purpose of this project is to gain experience using React. With React, applications that would normally need multiple pages will now br only 
+one page that is rendered based on the state changes causing the page to render.
+
+## Concept
+The React library contains code that is a combination of javascript and XML called JXL. The code looks like html but has javascript functionality.
+
+## Features
+The application has a navigation that has links in the header. As the user clicks on the link, normally a separate html page would be routed to. 
+As you click on each link, React renders the page that makes it as if the user went to a separate page.
 
 ## Available Scripts
 
@@ -68,3 +79,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Resources
+* [Deployed Application](https://anthonykieu.github.io/portfolio-react/)
+* [Github Code Respository](https://github.com/anthonykieu/portfolio-react)
