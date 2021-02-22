@@ -1,51 +1,44 @@
 // import logo from './logo.svg';
 import './App.css';
 
-import React from 'react';
-import Header from './components/Header';
-import Navigation from './components/Navigation';
+import React, {useState} from 'react';
+// import Header from './components/Header';
+import Nav from './components/Nav';
 import Project from './components/Project';
-import ContactForm from './components/Contact';
+import Contact from './components/Contact';
+import About from './components/About';
+import Resume from './components/Resume';
 import Footer from './components/Footer';
 
 function App() {
 
-  const [categories] = useState([
-    {
-      name: 'navigation',
-      description: 'Photos of grocery stores, food trucks, and other commercial projects',
-    },
-    { name: 'project', description: 'Portraits of people in my life' },
-    { name: 'footer', description: 'Delicious delicacies' },
-    
-  ]);
+  const renderPage = () => {
+    switch (currentPage) {
+      case 'Project':
+        return <Project />;
+      case 'Resume':
+        return <Resume />;
+      case 'Contact':
+        return <Contact />;
+      default:
+        return <About />;
+    }
+  };
 
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  const navBar = ['About', 'Project', 'Resume', 'Contact'];
+  const [currentPage, setCurrentPage] = useState(navBar[0]);
 
-  const [contactSelected, setContactSelected] = useState(false);
 
   return (
     <div>
-      <Header>
-      <Navigation
-        categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-      ></Navigation>
-      </Header>
+      <Nav
+        navBar={navBar}
+        setCurrentPage={setCurrentPage}
+        currentPage={currentPage}
+      >
+      </Nav>
       <main>
-        <div>
-          {!contactSelected ? (
-            <>
-              <Project currentCategory={currentCategory}></Project>
-              <About></About>
-            </>
-          ) : (
-              <ContactForm></ContactForm>
-            )}
-        </div>
+       {renderPage()}
       </main>
       <Footer></Footer>
     </div>
