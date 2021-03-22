@@ -18,5 +18,12 @@
     "image": "hero-bg.jpg",
     "deploy": "https://github.com/anthonykieu/run-buddy",
     "repo": "https://github.com/anthonykieu/run-buddy"
+  },
+  {
+    "name": "MustFItPets",
+    "desc": "MERN",
+    "image": "card_default.png",
+    "deploy": "https://quiet-refuge-60774.herokuapp.com/",
+    "repo": "https://github.com/calistamayer/pet-adoption"
   }
   ]
